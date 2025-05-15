@@ -1,1 +1,1 @@
-I don't know what you would do with html about my life except for a pitiful attempt at identity theft. Stealing is immoral and will be punished in eternity anyway. Do what you want, but keep this in mind.
+This is my personal website. I am asking you not to steal anything, but I can't stop you from downloading some html about my life. Stealing is immoral though, so don't do it :)
