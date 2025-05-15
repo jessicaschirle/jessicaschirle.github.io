@@ -1,1 +1,1 @@
-# jessicaschirle.github.io
+I don't know what you would do with html about my life except for a pitiful attempt at identity theft. Stealing is immoral and will be punished in eternity anyway. Do what you want, but keep this in mind.
