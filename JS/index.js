@@ -2,6 +2,30 @@ var width = $(window).width();
 var fileName = window.location.pathname.split('/').pop();
 var offset = $('#header').outerHeight();
 
+window.onload = function()
+{
+	fetch("blog.html")
+	.then(response => {
+		if (!response.ok) {
+			throw new Error(`HTTP error, status = ${response.status}`);
+		}
+		return response.text();
+	})
+	.then(html => {
+		const parser = new DOMParser();
+		const doc = parser.parseFromString(html, "text/html");
+		const myLinks = doc.querySelectorAll("ul a");
+		for(let i = 0; i < 3; i++){
+			console.log("blog-"+i);
+			document.getElementById("blog-"+i).href = myLinks[i].href;
+			document.getElementById("blog-"+i).innerText = myLinks[i].innerText;
+		}
+	})
+}
+
+
+
+
 window.onscroll = function(){
 if ((width >= 1000)){
     if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
