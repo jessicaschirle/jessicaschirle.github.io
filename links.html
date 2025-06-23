@@ -367,6 +367,7 @@ li {
 <script>
 	var xkcdLinks = [""];
 	window.onload = function() {
+		getHeader();
 		fetch("xkcd.html")
 		.then(response => {return response.text();})
 		.then(temp => {console.log(temp); xkcdLinks = temp.toString().split("\n");})
