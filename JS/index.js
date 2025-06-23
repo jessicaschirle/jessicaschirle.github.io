@@ -2,7 +2,7 @@ var width = $(window).width();
 var fileName = window.location.pathname.split('/').pop();
 var offset = $('#header').outerHeight();
 
-window.onload = function()
+function getHeader()
 {
 	fetch("blog.html")
 	.then(response => {
