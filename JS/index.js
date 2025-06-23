@@ -27,7 +27,7 @@ if ((width >= 1000)){
 	}
         $("#header").css("box-shadow","0px 0px 0px rgba(0,0,0,0)");
 	$(".dropdown-content").css("box-shadow","none");
-	$(".dropdown-content").css("background","transparent");
+	$(".dropdown-content").css("background","rgba(12, 60, 110,0.5)");
         $("#header").css("padding","6vh 4vw");
         $("#navigation a").hover(function(){
             $(this).css("border-bottom","2px solid #fff");
