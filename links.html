@@ -268,9 +268,16 @@ li {
 
 
                 			<li>
-					<a href="http://www.xkcd.com/">
-						<div style="margin-right:inherit;padding-top:15px;padding-bottom:15px;padding-left:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
-						xkcd</div></a>
+					<a id="xkcd-btn">
+						<div style="margin-right:inherit;padding-top:15px;padding-bottom:15px;padding-left:15px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); cursor:pointer;">
+						<span style="text-align: left; width:49%; display: inline-block;color: rgb(0,0,238);text-decoration: underline;">
+							xkcd
+						</span>
+						<span style="font-size:10px;text-align: right; width:45%;  display: inline-block;color: rgb(0,0,0);">
+							Click for a random favorite!
+						</span>
+						</div>
+					</a>
 					<ul>
 						<li>A very popular webcomic written by a former NASA engineer. xkcd is known for its nerdiness, commentary, and longevity. It has been updated consistently since 2005. "xkcd" is not an initialism.</li>
 					</ul>
@@ -348,5 +355,23 @@ li {
         Last updated: 5/14/25<br>adapted from <a href="https://imfunniee.github.io">imfunniee</a>
     </div>
     <script src="JS/index.js" type="text/javascript"></script>
+
+<script>
+	var xkcdLinks = [""];
+	window.onload = function() {
+		fetch("xkcd.html")
+		.then(response => {return response.text();})
+		.then(temp => {console.log(temp); xkcdLinks = temp.toString().split("\n");})
+	}
+	function getRandomLink() {
+            const randomIndex = Math.floor(Math.random() * xkcdLinks.length);
+            return xkcdLinks[randomIndex];
+        }
+        document.getElementById('xkcd-btn').addEventListener('click', function() {
+		document.getElementById('xkcd-btn').target = '_blank';
+		document.getElementById('xkcd-btn').href = 'https://xkcd.com/' + getRandomLink();
+        });
+</script>
+
 </body>
 </html>
