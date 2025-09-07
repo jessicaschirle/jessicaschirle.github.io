@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jessica Schirle</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+
+
+<body onload="loadHeader()">
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
+        <table>
+            <tr>
+                <td id="logo" style="color:#fff">Jessica Schirle. <span style="font-size:12px">(she/her)</span></td>
+                <td id="navigation">
+                    <a href="./">Home</a>
+			<div class="dropdown">
+				<a href="../blog.html">Blog</a>
+				<div class="dropdown-content" style="transition: 0.4s ease-in-out;">
+					<a id="blog-0" href=""></a>
+					<a id="blog-1" href=""></a>
+					<a id="blog-2" href=""></a>
+				</div>
+			</div>
+                    <a href="../links.html">Links</a>
+                    <a href="../CV.pdf">CV<span style="font-size:11px">.pdf</span></a>
+                </td>
+            </tr>
+        </table>
+    </header>
+    <table id="top_part">
+        <tr>
+            <td class="animated slideInDown" style="animation-delay:1.2s; vertical-align: top; text-align: center;"> <img src="../Images/socal.jpg" style="width:100%; height:175px"></td>
+        </tr>
+    </table>
+
+
+    <div id="blog-entry">
+        <h2 id="blog">Thoughts on Surviving Graduate School</h2>
+        <p>
+            A Ph.D. in mathematics is not an easy achievement. My time during graduate school had its fair share of challenges, both academic and personal, and while I cannot discuss all of these, I think it is beneficial to highlight some pitfalls that could befall a diligent student as they walk the path towards a terminal degree in a challenging subject.
+        </p>
+	
+	<ol>
+		<li style="font-size:14pt"> You must fit the mold of your program, not the other way around.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				There is no perfect Ph.D. program. No comprehensive or qualifying exam can be written such that every question is perfectly answerable by only assuming the knowledge that one obtains by taking a preparatory course. It is difficult to enter a program and realize that there is much background knowledge that you do not have: words whose definitions you have never seen; specialized topics from courses you took years ago and have since forgotten; rusty skills in algebra, combinatorics, etc. If one finds a gap in knowledge, it is up to the Ph.D. student to fill this gap. This is a foundational skill one must develop early in their graduate career, as it paves the path towards recognizing that mathematics research itself must be self-started.
+			</p>
+		<li style="font-size:14pt"> Social and community groups are important, but cannot overtake your focus.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				Humans are social creatures. We need to be around others whom we like and who like us. We need to work, play, laugh, cry, serve, sing, dance, and so much more. A Ph.D. program offers the space for only some of this. You must be dedicated towards the mathematics that you do, but this cannot be at the expense of your personal life and happiness. My advisor once said that "you can't do math if you're miserable," and this is something I believe to be true. Mathematics requires a distinctive clarity of mind that is hard to maintain while fighting one's mental health. Socialize: go to parties, community groups, religious gatherings, study groups, concerts, walks with friends, open mics, coffee hours. Join something where you can find meaning outside of research.<br><br>
+
+However, you must keep your eyes on the prize. It is not true that you get a Ph.D. by simply not leaving the program for six years. Sometimes you may feel as though the only expectation is: do not fail. The reality is that our minds are bad at learning the truth, which holds that each of those six years brings about personal developments that you do not even track. In your first year, you are wracking your brain to find, with proof, how many groups of order 30 there are up to isomorphism (<a href="https://groupprops.subwiki.org/wiki/Groups_of_order_30">answer</a>). By your third year, you look at this problem, having previously tackled it and now from outside the context of a classroom, and you are less stressed and more confident that you can solve it. You now can guide first year students in this problem, and yet you still look to those in their fifth year for guidance on completing a dissertation, not fully appreciating they also are still learning.<br><br>
+
+So do not spend too much time focusing on socializing or trying to take on more side projects than you can handle. If you take up a side project, no one will stop you. You must place these guardrails yourself. Focus on developing your own personal skillset, and trust that as you hone your abilities, you will become skilled enough that someone else will want your expertise.
+			</p>
+
+		<li style="font-size:14pt"> Acknowledge the work of someone else.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				You are standing on the shoulders of giants. Others have proven theorems that are now obvious, only because their proofs were written and clearly explained to you. Administrators and colleagues have worked together to ensure that a university runs smoothly so that you can spend your time learning these theorems. We like to imagine that things just happen, but the truth of the matter is that no one ever sees all of the thinking, planning, and work behind-the-scenes that results in a smooth production. Thank those whose work you do not see.
+			</p>
+		<li style="font-size:14pt"> Stay organized, but do not over-organize.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				You must keep your ideas neatly organized. This <i>can</i> be done in many different ways, but do not fall into the trap of believing that this <i>really can</i> be done in many different ways. The worst organization is none at all; the second worst is every organization possible, which leads to no organization at all. Do not focus on the perfect system, but instead on one that you can stick to consistently. If every time you think of an interesting question, this is added to a growing TeX file with no clear structure, then this is better than sometimes adding to the TeX file and other times writing on a sticky note that you tell yourself you will later add to the TeX file. Certainly one can create better systems than this, but consistency is key.
+			</p>
+		<li style="font-size:14pt"> Create homework for yourself.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				Once you reach the research stage of your Ph.D., depending on your advisor, you may have flexibility with deadlines. Do not take these to mean that you do not have deadlines or a timeline to meet. The timeline is long, and you need to be working consistently every week. Early into your research, begin creating homework problems for yourself. Once you stop doing official homework for a class, it becomes much harder to place yourself back into this routine. Do not worry if you use every answer to every homework problem you create, and do not worry if every question that you ask is deeply important. One of these may become a lemma that you find is key to proving a larger statement. You must simply have the faith that the small, seemingly meaningless work you start to do will one day be the key to solving a much larger problem.
+			</p>
+		<li style="font-size:14pt"> Politics are a distraction.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				Everyone has opinions about how things should be done. As Tears for Fears put it, "<a href="https://www.youtube.com/watch?v=aGCdLKXNF3w">Everybody Wants to Rule the World</a>." Perhaps you have ideas for how to improve education, justice, the economy, your school, etc. Maybe you think that, as a math Ph.D. student, you are naturally more talented than others and ought to be in control of so much more. What is key to recognize is that many have come before you who were smarter than you, and yet, the world is still not a just place. Focusing on changing the large scale can distract you from the work that you can control, which is in sharpening your intellect to crack difficult mathematics problems and teach the next generation what you know, just as was done for you. This does not mean that one ought to become unaware of injustice or one's own propensity for furthering undue harm in the world, but this innate desire for large scale change can drive us away from the proper order of priorities we ought to have set for ourselves.
+			</p>
+		<li style="font-size:14pt"> Ask too many questions. Poke too many holes.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				Every argument needs clarification. Do not consider something settled until it has held up to the highest order of scrutiny. Understand the definitions, then take them as far as your questions will lead them, but no further. Keep track of every hole you poke and then repair. And as you poke holes, accept the poking of others.
+			</p>
+		<li style="font-size:14pt"> Not every idea is a good idea.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				This ties in with the point about organization. Just because there are many modalities one could use for organization does not mean that one ought to utilize all of them. Likewise, not every idea you stumble upon is good. Perhaps you have ideas about how you will format your dissertation, ambitions to include an index, leitfaden, notation guide, etc. Maybe you spend months on a project making small steps in one direction only to keep hitting wall after wall. You must be able to recognize when ideas lead nowhere. Do not drive yourself insane trying the same thing more than once. Keep a record of what worked and what didn't. Keep these organized and readily accessible.
+			</p>
+		<li style="font-size:14pt"> You need to be bored and comfortable with failure.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				Harvard professor Arthur C. Brooks has videos posted on the Harvard Business Review YouTube channel about the need for boredom (<a style="font-size:12pt;" href="https://www.youtube.com/watch?v=orQKfIXMiA8">here</a>) and not placing our identity in success (<a href="https://www.youtube.com/watch?v=L5lsYI0Q8zw">here</a>). Boredom (which is really freedom from distraction) leads to better development of ideas and problem-solving. Becoming comfortable with failure is a necessity in mathematics, as one cannot prove a theorem per month. You will fail, but what sets you apart is your ability to get back up again. Reform is always possible.
+			</p>
+		<li style="font-size:14pt"> Set a timer.
+			<p style="font-size:12pt; margin-left:1vw;"> 
+				Stick to a schedule. Do not think about research freeform, wandering around and becoming absent-minded because you have <a href="https://xkcd.com/356/">nerd-sniped</a> yourself all day. Set a timer and treat it like an authority. When the timer goes off, you listen and move onto something else. If the idea you were stuck on was truly good, it will stay in your memory (especially if you are bored later). You will be able to write it down later when you come back to research. You must have a routine that you stick to so that you may have peace of mind in knowing that you have accomplished everything that you have been tasked with.
+			</p>
+	</ol>
+    </div>
+    <script src="../JS/index.js" type="text/javascript"></script>
+
+</body>
+</html>
