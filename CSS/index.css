@@ -151,6 +151,17 @@ border-bottom:2px solid #fff;
 	margin-top: 0.5em;
 }
 
+#blog-entry {
+    padding:4vh 2vw;
+    text-align:justify;
+}
+
+#blog-entry h2 {
+    padding:5px 0px;
+    border-bottom:4px solid rgb(12, 60, 110);
+    width:30%
+}
+
 #top_part {
     width:100%;
     border:2vh solid #fff;
@@ -365,3 +376,4 @@ button:focus {
         color:#000;
     }
 }
+
