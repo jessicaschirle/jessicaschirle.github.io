@@ -33,6 +33,7 @@ body {
     100% {transform: rotate(360deg);}
 }
 header {
+	font-family: 'Poppins', sans-serif;
     width:92vw;
     padding:6vh 4vw;
     position:fixed;
@@ -133,22 +134,22 @@ border-bottom:2px solid #fff;
 #blog {
     width:92vw;
     padding:6vh 4vw;
-    font-weight:bold;
 }
 
 #blog h1 {
     padding:5px 0px;
     border-bottom:4px solid rgb(12, 60, 110);
     width:6%;
+	font-weight:bold;
 }
 
 #blog a {
-	text-underline-offset: 10px;
-	text-decoration: underline rgba(12, 60, 110,0.8);
-	text-align:left;
-	display: block;
-	font-size: 1.5em;
-	margin-top: 0.5em;
+	text-underline-offset: 10px; !important
+	text-decoration: underline rgba(12, 60, 110,0.8); !important
+	text-align:left; !important
+	display: block; !important
+	font-size: 1.5em; !important
+	margin-top: 0.5em; !important
 }
 
 #blog-entry {
@@ -160,6 +161,16 @@ border-bottom:2px solid #fff;
     padding:5px 0px;
     border-bottom:4px solid rgb(12, 60, 110);
     width:30%
+}
+
+#footnote {
+  text-underline-offset: 2px;
+	text-decoration: underline rgba(12, 60, 110,0.8);
+	text-align:left;
+	font-size: 75%;
+	margin-top: 0em;
+	padding-left:3px;
+	padding-right:3px;
 }
 
 #top_part {
@@ -247,6 +258,16 @@ border-bottom:2px solid #fff;
 #photos img:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+.thumbnail {
+  transition: transform 0.4s ease;
+  cursor: zoom-in;
+}
+.zoomed {
+  transform: scale(2.5); /* Increase size significantly */
+  cursor: zoom-out;
+  position: relative;
+  z-index: 999;
 }
 #bio {
     width:92vw;
