@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="CSS/index.css">
 </head>
-<body onload="getHeader()">
+<script>
+	function runOffset()
+	{
+  		const headerHeight = document.getElementById("header").offsetHeight;
+  		document.getElementById("about").style.marginTop = headerHeight/3 + 'px';
+	}
+</script>	
+<body onload="getHeader(); runOffset();">
     <div id="loading">
         <div id="spinner"></div>
-    </div>
-    <div id="magnify">
-        <h1 onclick="closemagnify()"><i class="fas fa-times"></i></h1>
-        <div id="img_here"></div>
     </div>
     <header id="header" class="animated slideInDown" style="animation-delay:1.8s;">
         <table>
@@ -113,7 +116,9 @@
             			</td>
             			<td style="text-align:left; vertical-align:top; margin-top:-2vh">
 				<ul>
-                			<li>Math 1250 - Precalculus Analysis </li>
+                			<li>Math 0103 - Basic Math and Introductory Aglebra </li>
+					
+							<li>Math 1250 - Precalculus Analysis </li>
 
 							<li>Math 1296 - Calculus I </li>
 					
@@ -237,7 +242,7 @@
 					 
 					<li><a href="https://www.youtube.com/watch?v=_qUaPjLrPjM">Yvette Young</a></li>
 
-					<li><a href="https://www.youtube.com/watch?v=pftT6MhrtLE&list=PLM_eo-srGT71FK6lo6f3zRghqJjMmAJtW&index=3">Adrianne Lenker</a></li>
+					<li><a href="https://www.youtube.com/watch?v=fwjPw7Ud2sQ">Flyleaf</a></li>
 				</ol>
             			</td>
 
@@ -287,19 +292,19 @@
 
 				<td class="animated slideInDown" style="animation-delay:1.2s; vertical-align: top; text-align: center;"> 
 					<figure style="padding-top:15px;padding-bottom:5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
- 						<img src="Images/friends.jpg" alt="From left: Maureen, me, Ari, and Jenny in Southern California" style="width:65%; height:65%;display:block; margin:0 auto;">
+ 						<img src="Images/friends.jpg" alt="From left: Maureen, me, Ari, and Jenny in Southern California" style="width:65%; height:65%;display:block; margin:0 auto;" class="thumbnail" onclick="this.classList.toggle('zoomed')>
   						<figcaption style="text-align:center">Visiting friends in SoCal</figcaption>
 					</figure>
 				</td>
 				<td class="animated slideInDown" style="animation-delay:1.2s; vertical-align: top; text-align: center;">
-					<figure style="padding-top:15px;padding-bottom:5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
- 						<img src="Images/JMM.jpg" alt="Clockwise from bottom: Maureen, Ari, me, Arghya, Sidhanth, Anubhav, Luke, Jenny, and Omar at Annapurna Cafe in Seattle during the 2025 Joint Mathematics Meeting" style="width:65%; height:65%;display:block; margin:0 auto;">
+					<figure style="padding-top:15px;padding-bottom:5px;padding-left:3px; padding-right:3px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
+ 						<img src="Images/JMM.jpg" alt="Clockwise from bottom: Maureen, Ari, me, Arghya, Sidhanth, Anubhav, Luke, Jenny, and Omar at Annapurna Cafe in Seattle during the 2025 Joint Mathematics Meeting" style="width:65%; height:65%;display:block; margin:0 auto;" class="thumbnail" onclick="this.classList.toggle('zoomed')>
   						<figcaption style="text-align:center">Dinner in Seattle during <a href="https://jointmathematicsmeetings.org/meetings/national/jmm2025/2314_intro">JMM 2025</a></figcaption>
 					</figure>
 				</td>
 				<td class="animated slideInDown" style="animation-delay:1.2s; vertical-align: top; text-align: center;"> 
 					<figure style="padding-top:15px;padding-bottom:5px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
- 						<img src="Images/grad.jpg" alt="From left: Michael, Jenny, and me during graduation in front of a giant inflatable anteater with a UCI logo" style="width:65%; height:65%;display:block; margin:0 auto;">
+ 						<img src="Images/grad.jpg" alt="From left: Michael, Jenny, and me during graduation in front of a giant inflatable anteater with a UCI logo" style="width:65%; height:65%;display:block; margin:0 auto;" class="thumbnail" onclick="this.classList.toggle('zoomed')>
   						<figcaption style="text-align:center">Graduating with my academic siblings</figcaption>
 					</figure>
 				</td>
@@ -324,7 +329,7 @@
             </table>
     </div>
     <div id="footer" style="text-align:left; margin-left:2vw;vertical-align:bottom;margin-bottom:0px">
-        Last updated: 2025-09-06  <span style="font-size:10pt"> [<a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>] </span><br>adapted from <a href="https://imfunniee.github.io">imfunniee</a>
+        Last updated: 2026-05-02  <span style="font-size:10pt"> [<a href="https://en.wikipedia.org/wiki/ISO_8601">ISO 8601</a>] </span><br>adapted from <a href="https://imfunniee.github.io">imfunniee</a>
     </div>
     <script src="JS/index.js" type="text/javascript"></script>
 </body>
